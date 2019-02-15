@@ -90,7 +90,9 @@ class LoginFormState extends State<LoginForm> {
                   child: Text(
                     'Register New Account'
                   ),
+                   textColor: Theme.of(context).primaryColor,
                   onPressed: (){
+                    //ถ้ามีการคลิกปุ่ม ให้พาไปหน้า register
                     Navigator.push(context, MaterialPageRoute(builder: (context)=>RegistPage()));
                   },
                 ),
